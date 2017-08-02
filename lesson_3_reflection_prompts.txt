@@ -1,0 +1,27 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+- The history of the commits is written to a special hidden folder .git, when we initialize the directory, this folder is being created and now git knows how to work with this folder.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+- Staging area is a buffer between the working direcory and the repository. You add all the files you want to commit to the staging area and then make changes in the repository. It helps you to simulatniously commit several files.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+- You can compare the versions of the files in repo, sa and wd.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+- As an example - when you want to test a new feature, but you want to continue working on a project - the branch of the project can continue develpment, and the new feature can be tested on the other branch.
+
+How do the diagrams help you to visualize the branch structure?
+
+- You can see which commits are one the branch.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+- All the commits for both branches are availible. So you can reach each point from the new branch. But from each branch you can reach only it's parent commit.
+
+What are the pros and cons of Git's automatic merging vs always doing merging manually?
+
+- If there is no conflict - then Git works well. If there is a conflict - it is better to know what is it. 
